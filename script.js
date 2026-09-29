@@ -1,6 +1,6 @@
 // 1) Indsæt din Publishable key nedenfor.
 const SUPABASE_URL = "https://yjcyfczhjjminzmotvcj.supabase.co";
-const SUPABASE_KEY = "INDSÆT_DIN_PUBLISHABLE_KEY_HER";
+const SUPABASE_KEY = "sb_publishable_23FFRX9kGlcBUxAjJCtphA_J0bMVYOA";
 
 // VIGTIGT: bucket-navnet er case-sensitive og er oprettet som "Fildrev".
 const BUCKET = "Fildrev";
