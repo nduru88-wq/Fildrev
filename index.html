@@ -7,17 +7,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div>
-      <h1>Fildrev</h1>
-      <div id="breadcrumbs" class="breadcrumbs"></div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">☁️</div>
+      <div>
+        <h1>Fildrev</h1>
+        <div id="breadcrumbs" class="breadcrumbs"></div>
+      </div>
     </div>
-    <button id="uploadBtn" class="primary">+ Upload filer</button>
-    <input id="fileInput" type="file" multiple hidden>
+    <div class="top-actions">
+      <button id="downloadSelectedBtn" class="secondary hidden">⬇ Download valgte</button>
+      <button id="uploadBtn" class="primary">＋ Upload filer</button>
+      <input id="fileInput" type="file" multiple hidden>
+    </div>
   </header>
 
   <main>
-    <div id="status" class="status">Indlæser…</div>
+    <section id="dropZone" class="drop-zone">
+      <div class="drop-icon">⬆</div>
+      <div><strong>Træk filer hertil</strong><br><span>eller brug “Upload filer”</span></div>
+    </section>
+
+    <div class="toolbar">
+      <div id="status" class="status">Indlæser…</div>
+      <div id="selectionStatus" class="selection-status"></div>
+    </div>
+
     <div id="items" class="grid"></div>
   </main>
 
@@ -26,7 +41,13 @@
     <progress id="uploadProgress" max="100" value="0"></progress>
   </div>
 
+  <div id="downloadBox" class="upload-box hidden">
+    <strong id="downloadText">Forbereder download…</strong>
+    <progress id="downloadProgress" max="100" value="0"></progress>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
