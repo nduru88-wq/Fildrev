@@ -1,0 +1,10 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f6f7f9;color:#1f2937}
+header{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px max(20px,5vw);background:#fff;border-bottom:1px solid #e5e7eb}
+h1{margin:0 0 7px;font-size:28px}.breadcrumbs{font-size:14px;color:#667085}.breadcrumbs button{border:0;background:none;padding:0;color:#2563eb;cursor:pointer}
+main{padding:28px max(20px,5vw)}.primary{border:0;border-radius:10px;padding:12px 16px;background:#111827;color:white;font-weight:700;cursor:pointer}
+.status{margin-bottom:16px;color:#667085}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.card{background:white;border:1px solid #e5e7eb;border-radius:14px;padding:16px;min-height:105px;box-shadow:0 2px 8px rgba(0,0,0,.04);cursor:pointer}
+.card:hover{border-color:#9ca3af}.icon{font-size:32px}.name{margin-top:10px;font-weight:700;word-break:break-word}.meta{font-size:12px;color:#667085;margin-top:6px}
+.file-actions{display:flex;gap:8px;margin-top:12px}.file-actions button{padding:7px 9px;border:1px solid #d0d5dd;border-radius:8px;background:white;cursor:pointer}
+.upload-box{position:fixed;right:20px;bottom:20px;background:white;border:1px solid #ddd;border-radius:12px;padding:15px;width:min(340px,calc(100vw - 40px));box-shadow:0 8px 30px #0002}.upload-box progress{width:100%;margin-top:10px}.hidden{display:none}
+@media(max-width:600px){header{align-items:flex-start;flex-direction:column}.primary{width:100%}.grid{grid-template-columns:1fr 1fr}}

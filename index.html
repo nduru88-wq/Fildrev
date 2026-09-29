@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fildrev</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Fildrev</h1>
+      <div id="breadcrumbs" class="breadcrumbs"></div>
+    </div>
+    <button id="uploadBtn" class="primary">+ Upload filer</button>
+    <input id="fileInput" type="file" multiple hidden>
+  </header>
+
+  <main>
+    <div id="status" class="status">Indlæser…</div>
+    <div id="items" class="grid"></div>
+  </main>
+
+  <div id="uploadBox" class="upload-box hidden">
+    <strong id="uploadText">Uploader…</strong>
+    <progress id="uploadProgress" max="100" value="0"></progress>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
